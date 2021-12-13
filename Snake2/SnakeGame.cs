@@ -34,7 +34,7 @@ namespace Snake2
             Random r = new Random();
             for (int i = 0; i < NPOMES; i++)
             {
-                Pomes.Add(new Point(r.Next(0, X_SIZE), r.Next(0, Y_SIZE)));
+                Pomes.Add(new Point((double)r.Next(0, X_SIZE), (double)r.Next(0, Y_SIZE)));
             }
         }
         internal void moure(DireccioSnake direccio)
